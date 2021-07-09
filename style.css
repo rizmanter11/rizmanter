@@ -7,6 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -90,6 +91,7 @@ p {
 #header .header{
     min-height: 8vh;
     background-color: rgba(31, 30, 31, 0.24);
+    transition: .3s ease background-color;
 }
 
 #header .header .nav-bar{
@@ -152,6 +154,9 @@ p {
     letter-spacing: initial;
 }
 
+#header .nav-list ul li:hover a {
+    color: orange;
+}
 #header .hamburger{
     height: 60px;
     width: 60px;
@@ -506,11 +511,26 @@ p {
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 20px;
         margin: 0;
     }
 
     #contact contact-item .icon img {
         object-fit: contain;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+    *#header .nav-list ul.active{
+        left: 85%;
+    }
+
+    #header .nav-list ul {
+        width: fit-content;
+    }
+
+    #header .nav-list ul a::after{
+        font-size: 5rem;
+        color: rgba(111, 115, 117, 0.466);
+    }
+    
 }
