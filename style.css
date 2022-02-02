@@ -520,6 +520,7 @@ p {
 
 #contact .icon{
     width: 70px;
+    height: 70px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -565,11 +566,8 @@ p {
 
 #footer .social-item{
     height: 60px;
-    width: 60px;
+    width: auto;
     margin: 0 5px;
-}
-
-#footer .social-item img{
     filter: grayscale(100%);
 }
 
