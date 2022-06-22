@@ -518,6 +518,14 @@ p {
     box-shadow: 0px 0px 5px 0 #0000002c;
 }
 
+#contact .contact-item a{
+    color: black
+}
+
+#contact .contact-item a:hover, a:active{
+    color: gray
+}
+
 #contact .icon{
     width: 70px;
     height: 70px;
